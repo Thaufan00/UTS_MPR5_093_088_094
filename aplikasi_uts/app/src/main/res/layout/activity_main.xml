@@ -49,20 +49,24 @@
         android:inputType="textPassword"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/loginbtn"
         android:layout_below="@id/password"
-        android:text="login"
-        android:backgroundTint="@android:color/holo_green_light"
         android:layout_alignParentRight="true"
-        android:layout_margin="20dp"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="login" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/forgotpass"
-        android:layout_below="@id/loginbtn"
+        android:layout_below="@id/button"
         android:text="forget passowrd"
         android:textColor="@color/white"
         android:layout_alignParentLeft="true"
